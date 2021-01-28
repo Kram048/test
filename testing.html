@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>IT135-8L - Checkout - Dipad, Mark Louie</title>
+    <style>
+		table, th, td {
+		border: 1px solid black;
+		}
+		
+		table.center {
+		margin-left: auto; 
+		margin-right: auto;
+		}
+		
+		div.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		}
+		
+		div.box {
+		width: 320px;
+		padding: 10px;
+		margin: auto;
+		border: 3px solid black;
+		padding: 10px;
+		}
+		
+		body {
+		background-image: url('bak.jpg');
+		}
+    </style>
+	
+</head>
+
+<body>
+<form action="http://localhost/LE2/Dipad-Summary.php" method="post">
+<h1 style="text-align:center;font-size:50px;">Checkout</h1>    
+<table class="center">
+<!-- Input of the customer's name and adress -->
+
+	<caption style="font-size:20px;"; >Customer Details</caption>
+	<tr> 
+		<td> Cutomer's name: </td>
+		<td> <input type = "text"  name = "Name" size = "40"> </td>
+	</tr>
+	<tr> 
+		<td> Contact Number: </td>
+		<td> <input type = "text"  name = "contact" size = "40"> </td>
+	</tr>
+	<tr> 
+		<td> Shipping Address: </td>
+		<td> <input type = "text"  name = "address" size = "40"> </td>
+	</tr>
+</table>
+<p />
+<table class="center">
+<!-- Table of Items -->
+
+	<caption style="font-size:20px;">Item List</caption><br>
+	<tr>
+	<th> Item List</th>
+	<th> Product Name </th>
+	<th> Price </th>
+	<th> Quantity </th>
+	<th> Select </th>
+	</tr>
+	<tr> 
+		<td> <img src="mouse.jpg" width="150" height="150" alt=""> </td>
+		<td> Mouse </td>
+		<td> ₱ 1200.00 </td>
+		<td> <input type = "text"  name = "mouse" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+		
+	</tr>
+	<tr> 
+		<td> <img src="keyboard.jpg" width="150" height="150" alt=""> </td>
+		<td> Keyboard </td>
+		<td> ₱ 1000.00 </td>
+		<td> <input type = "text"  name = "keyboard" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	<tr> 
+		<td> <img src="earphones.jpg" width="150" height="150" alt=""> </td>
+		<td> Earphones </td>
+		<td> ₱ 400.00 </td>
+		<td> <input type = "text"  name = "earphones" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	<tr> 
+		<td> <img src="controller.jpg" width="150" height="150" alt=""> </td>
+		<td> PS5 Controller </td>
+		<td> ₱ 1300.00 </td>
+		<td> <input type = "text"  name = "controller" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	<tr> 
+		<td> <img src="headphones.jpg" width="150" height="150" alt=""> </td>
+		<td> Headphones </td>
+		<td> ₱ 1500.00 </td>
+		<td> <input type = "text"  name = "headphones" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	<tr> 
+		<td> <img src="bag.jpg" width="150" height="150" alt=""> </td>
+		<td> Bag </td>
+		<td> ₱ 3000.00 </td>
+		<td> <input type = "text"  name = "bag" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	<tr> 
+		<td> <img src="brush.jpg" width="150" height="150" alt=""> </td>
+		<td> Paint Brush </td>
+		<td> ₱ 395.00 </td>
+		<td> <input type = "text"  name = "brush" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	<tr> 
+		<td> <img src="chair.jpg" width="150" height="150" alt=""> </td>
+		<td> Chair </td>
+		<td> ₱ 700.00 </td>
+		<td> <input type = "text"  name = "chair" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	<tr> 
+		<td> <img src="speaker.jpg" width="150" height="150" alt=""> </td>
+		<td> Speaker </td>
+		<td> ₱ 3500.00 </td>
+		<td> <input type = "text"  name = "speaker" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	<tr> 
+		<td> <img src="pillow.jpg" width="150" height="150" alt=""> </td>
+		<td> White Pillow </td>
+		<td> ₱ 550.00 </td>
+		<td> <input type = "text"  name = "pillow" size = "3"> </td>
+		<td> <input type = "checkbox" > </td>
+	</tr>
+	
+	
+	
+
+</table>
+
+<p />
+<div class="box">
+	<table class="center">
+	<tr>
+	<p>
+	
+	<h3 style="text-align: center"> Choose a Discount Privileges: </h3>
+	<div class="center">
+        <select name="discount">
+            <option value="">Select...</option>
+            <option value="Students">Student</option>
+            <option value="PWD">PWD</option>
+            <option value="Senior Citizen">Senior Citizen</option>
+			<option value="None">None</option>
+        </select>
+	</div>
+
+		
+	<h3 style="text-align: center"> Payment Methods:  </h3>
+		<td><input type = "radio"  name = "pay" value = "Visa" /> Visa<br /></td>
+		<td><input type = "radio"  name = "pay" value = "Master Card" /> Master Card<br /></td>
+		<td><input type = "radio"  name = "pay" value = "Gcash" /> Gcash<br /></td>
+	
+	</p>
+	</tr>
+	</table>
+	
+	<div class="center">
+		<input style="font-size:15px;" type = "submit" value = "Finalize order" /><br>
+		<input style="font-size:15px;" type = "reset" value = "Clear Cart" /> 
+	</div>
+
+</div>
+</form>	
+</body>
+</html>
